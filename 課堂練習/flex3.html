@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-items: stretch</title>
+    <style>
+        div.flex{
+            background: #ccc;
+            height: 500px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: stretch;
+        }
+        div.item{
+            margin: 0;
+            width: 200px;
+        }
+        .red{
+            background: lightpink;
+            height: 200px;
+        }
+        .green{
+            background: lightgreen;
+        }
+        .blue{
+            background: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="item red">A</div>
+        <div class="item green">B</div>
+        <div class="item blue">C</div>
+    </div>
+</body>
+</html>

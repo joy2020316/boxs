@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex1</title>
+    <style>
+        div{
+            background:#ccc;
+            height: 500px;
+        }
+        .myflex{
+            display: flex;
+            flex-direction: column;
+        }
+        /* 控制主軸方向 
+        flex-direction: row;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        */
+        .item{
+            width: 200px;
+            height: 200px;
+        }
+        div.item{
+            margin: 0;
+        }
+        .red{
+            background: lightpink;
+        }
+        .green{
+            background: lightgreen;
+        }
+        .blue{
+            background: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="myflex">
+        <div class="item red"></div>
+        <div class="item green"></div>
+        <div class="item blue"></div>
+    </div>
+</body>
+</html>

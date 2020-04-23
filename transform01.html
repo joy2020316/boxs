@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework</title>
+    <style>
+        body {
+      margin: 0;
+      text-align: center;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+        .ball{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: #000;
+            position: relative;
+        }
+        .ball::after{
+            content:"02";
+            width: 100px;
+            height:100px;
+            border: 1px solid #000;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 100px;
+            font-size: 2rem;
+            color: white;
+            position: absolute;
+            left:0;
+            top:0;
+            background: darkred;
+          /*  opacity: 0;*/
+            transform-origin: center right;
+            transition: 
+            /* all 2s ease 0s */
+            /* opacity 1s ease 0s, */
+          /*  width 2s ease 0s,*/
+            background-color 2s ease 3s,
+            transform 3s ease 6s,
+            top 3s ease 9s
+            ;
+            }
+            .ball:hover::after{
+      /*opacity: 0.5; */
+      background: darkorange;
+      transform: rotate(180deg);
+      top: -100px;
+      
+    }
+
+    </style>
+</head>
+<body>
+    <div class="">
+      <div class="ball"><p>01</p></div>
+    </div>
+
+    
+</body>
+</html>

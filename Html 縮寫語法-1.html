@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html 縮寫語法</title>
+</head>
+<style>
+    body{
+       
+    }
+</style>
+<body>
+   <!--div>ul>li-->
+   <h2> 兒童 > </h2>
+   <div>
+       <ul>
+           <li></li>
+       </ul>
+   </div> 
+
+   <!--div+p+bq-->
+   <h2> 兄弟 + </h2>
+   <div></div>
+   <p></p>
+   <blockquote></blockquote>
+
+   <!--div+div>p>span+em-->
+   <h2> > + 綜合運用 </h2>
+   <div></div>
+   <div>
+       <P><span></span><em></em></P>
+   </div>
+
+   <!--div+div>p>span+em^bq-->
+   <h2> 爬上 ^ </h2>
+   <p>bq 與 p 同層不再與 em 同層或下層 </p>
+   <div></div>
+   <div>
+       <p><span></span><em></em></p>
+       <blockquote></blockquote>
+   </div>
+
+   <!--div+div>p>span+em^^^bq-->
+   <h2>爬上 ^ 運算符的多個運用</h2>
+   <p> bq 爬了三層與 div 同層</p>
+   <div></div>
+   <div>
+       <p><span></span><em></em></p>
+   </div>
+   <blockquote></blockquote>
+
+   <!--ul>li*5 -->
+   <h2>乘法 *</h2>
+   <ul>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+   </ul>
+
+   <!--div>(header>ul>li*2>a)+footer>p-->
+   <h2>分組 ( )</h2>
+   <p>將子樹分組</p>
+   <div>
+       <header>
+           <ul>
+               <li><a href=""></a></li>
+               <li><a href=""></a></li>
+           </ul>
+       </header>
+       <footer>
+           <p></p>
+       </footer>
+   </div>
+
+   <!--(div>dl>(dt+dd)*3)+footer>p-->
+   <p>每個組就是一個子樹,可以彼此嵌套,也就是組中有組.</p>
+   <div>
+       <dl>
+           <dt></dt>
+           <dd></dd>
+           <dt></dt>
+           <dd></dd>
+           <dt></dt>
+           <dd></dd>
+       </dl>
+       <footer>
+           <p></p>
+       </footer>
+   </div>
+
+   <!--div#header+div.page+div#footer.class1.class2.class3-->
+   <h2> ID # 與 CLASS .</h2>
+   <div id="header"></div>
+   <div class="page"></div>
+   <div id="footer" class="class1 class2 class3"></div>
+
+   <!--ul>li.item$*5-->
+   <h2> 項目符號 $</h2>
+   <p>隨著乘法符號增加的數值, 你可以使用 $ 來編號它們, 將 $ 運算符放在元素名稱, <br>
+       屬性名稱或屬性值內，以輸出當前重複元素的數量：</p>
+   <ul>
+       <li class="item1"></li>
+       <li class="item2"></li>
+       <li class="item3"></li>
+       <li class="item4"></li>
+       <li class="item5"></li>
+   </ul>
+
+   <!--ul>li.item$$$*5-->
+   <p>你可以連續使用多個 $ 來表示數字位數：</p>
+   <ul>
+       <li class="item001"></li>
+       <li class="item002"></li>
+       <li class="item003"></li>
+       <li class="item004"></li>
+       <li class="item005"></li>
+   </ul>
+
+   <!--ul>li.item$@3*5-->
+   <h2>更改編號基礎 @</h2>
+   <p>使用 @ 修飾符，可以更改編號基數（例如起始值）。</p>
+   <ul>
+       <li class="item3"></li>
+       <li class="item4"></li>
+       <li class="item5"></li>
+       <li class="item6"></li>
+       <li class="item7"></li>
+   </ul>
+
+   <!--a{Click me}-->
+   <h2>文本 { text }</h2>
+   <p>用 { } 將文本添加到元素中, 當 { text } 在元素之後立即編寫時，它不會更改父上下文。</p>
+   <a href="">Cliek me</a>
+
+   <!--a{click}+b{here}-->
+   <a href="">click</a><b>here</b>
+
+   <!--a>{click}+b{here}-->
+   <a href="">click<b>here</b></a>
+   <p>a 的後面接 > 表示 b 被包在 a 內部; > 是後代的意思</p>
+   
+   <!--p>{Click }+a{here}+{ to continue}-->
+   <p> 有 > </p>
+   <p>
+       Click 
+       <a href="">here</a>
+       to continu
+   </p>
+
+   <!--p{Click }+a{here}+{ to continue}-->
+   <p> 沒有 ></p>
+   <p>Click</p>
+   <a href="">here</a> to continue
+
+   <!--div.bigbox>div.box{$$}*12-->
+   <div class="bigbox">
+       <div class="box">01</div>
+       <div class="box">02</div>
+       <div class="box">03</div>
+       <div class="box">04</div>
+       <div class="box">05</div>
+       <div class="box">06</div>
+       <div class="box">07</div>
+       <div class="box">08</div>
+       <div class="box">09</div>
+       <div class="box">10</div>
+       <div class="box">11</div>
+       <div class="box">12</div>
+   </div>
+
+   <p></p>
+
+  
+
+
+   
+</body>
+</html>

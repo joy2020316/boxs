@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      text-align: center;
+      box-sizing: border-box;
+      background: radial-gradient(circle at 50% 10%, blue, black);
+    }
+
+    .bigball_5 {
+      align-items: flex-start;
+      height: 600px;
+      color: white;
+    }
+
+    .ball_5 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid blue;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 2rem;
+      color: #eee;
+      position: relative;
+      animation: num5 ease-in-out 10s infinite alternate;
+    }
+
+    @keyframes num5 {
+      from {
+        background: #fff;
+        transform: translate(500px, 0) rotate(0deg) scale(0.5);
+      }
+
+      to {
+        background: #f00;
+        transform: translate(500px, 300px) rotate(360deg) scale(3, 2);
+      }
+    }
+
+    .bigball_1 {
+      margin: 0;
+      text-align: center;
+      color: white;
+      height: 100vh;
+    }
+
+    .ball_1 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid blue;
+      border-radius: 50%;
+      font-size: 2rem;
+      color: #eee;
+      position: relative;
+      animation: num1 ease-in-out 10s infinite alternate;
+    }
+
+    @keyframes num1 {
+      from {
+        background: #fff;
+        transform: rotate(0deg);
+        left: 0px;
+      }
+
+      to {
+        background: #f00;
+        transform: rotate(360deg) scale(0.5);
+        left: 400px;
+      }
+    }
+
+    .bigball_3 {
+      color: #f00;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ball_3 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid blue;
+      border-radius: 50%;
+      font-size: 2rem;
+      position: relative;
+    }
+
+    .ball_3::after {
+      content: "04";
+      width: 100px;
+      height: 100px;
+      border: 1px solid blue;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 100px;
+      font-size: 2rem;
+      color: white;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #f00;
+      transform-origin: center right;
+      transition:
+        background-color 2s ease 2s,
+        transform 2s ease 2s,
+        top 2s ease 2s;
+    }
+
+    .ball_3:hover::after {
+      color: rgb(61, 61, 63);
+      background: #fff;
+      transform: rotate(180deg) scale(0.5);
+      top: -100px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="bigball_5">
+    <div class="ball_5"><p>05</p></div>
+  </div>
+
+  <div class="bigball_1">
+    <div class="ball_1"><p>01</p> </div>
+  </div>
+
+  <div class="bigball_3">
+    <div class="ball_3"><p>03</p></div>
+  </div>
+
+</body>
+
+</html>

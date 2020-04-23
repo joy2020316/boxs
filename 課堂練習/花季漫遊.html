@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flower</title>
+<style>
+    body{
+        font-family: Arial, "Microsoft JhengHei", sans-serif;
+        text-align: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(rgba(250, 1, 237, 0.397) 0%, white 50%,rgba(250, 1, 237, 0.397) 100% );
+    }
+    h2{
+        color: rgba(250, 1, 237, 0.397);
+        text-align: center;
+    }
+    .title{
+        display: inline-block;
+        text-align: center;
+        border: 1px solid rgba(250, 1, 237, 0.397);
+        background-color: white;
+        width: 36px;
+        height: 36px;
+        padding: 3px;
+        border-radius: 50%;
+        margin: 30px 10px;
+        box-shadow: 5px 5px 5px #666;
+    }
+    table{
+        width: 1024px;
+        margin: auto;
+        background-color: white;
+        box-shadow: 0 0 10px #777;
+        border-radius: 10px;
+     
+    }
+    th, td{
+        padding: 1px;
+        width: calc(100vh / 13);
+        letter-spacing: 1px;
+        text-align: center;
+        color: #333;
+    }
+    th{
+        font-size: 90%;
+        border-top: 1px solid #999;
+        border-bottom: 2px solid #666;
+    }
+    .flower{
+       width: 10%;
+       word-spacing: 2rem;
+       border-top: none;
+       border-bottom: 1px solid #ddd;
+    }
+    tr:nth-child(odd){
+        background-color: #eee;
+    }
+    tr:hover{
+        background-color: aquamarine;
+    }
+    .star{
+        color: rgba(255, 20, 145, 0.788);
+        text-shadow: 1px 2px #ddd;
+        text-align: center;
+    }
+    .trip{
+        display: inline-block;
+        text-align: center;
+        border: 1px solid rgba(250, 1, 237, 0.397);
+        background-color: white;
+        padding: 16px;
+        margin-bottom: 30px;
+        border-radius: 1em 4em 1em 4em / 2em 1em 2em 1em;
+        box-shadow: 5px 5px 5px #666;
+    }
+    .table_2{
+        width: 700px;
+        margin: auto;
+        background-color: white;
+        box-shadow: 0 0 10px #777;
+        border-radius: 10px;
+    }
+    .table_2 th,td {
+        padding: 3px 5px 3px 5px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: #111;
+    }
+    .table_2 th{
+        width: 12%;
+        border-top: none;
+        border-bottom: 1px solid #ccc;
+    }
+    .addr{
+        width: 60%;
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .back{
+        text-decoration: none;
+        color: rgba(250, 1, 237, 0.397);
+        display: inline-block;
+        border: 1px solid rgba(250, 1, 237, 0.397);
+        padding: 5px;
+        width: 40px;
+        text-align: center;
+        background-color: white;
+        border-bottom-left-radius: 20px 50px;
+        box-shadow: 5px 5px 5px #666;
+    }
+</style>
+</head>
+<body>
+    <div id="top" >
+    <h2 class="title">花</h2>
+    <h2 class="title">季</h2>
+    <h2 class="title">漫</h2>
+    <h2 class="title">遊</h2>
+    </div>
+    <table>
+        <tr >
+            <th>花種\時令</th>
+            <th>一月</th>
+            <th>二月</th>
+            <th>三月</th> 
+            <th>四月</th>
+            <th>五月</th>
+            <th>六月</th>
+            <th>七月</th>
+            <th>八月</th>
+            <th>九月</th> 
+            <th>十月</th>
+            <th>十一月</th>
+            <th>十二月</th>
+        </tr>
+        <tr>
+            <th class="flower"><a href="#梅花">梅花</a></th>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+        </tr>
+        <tr>
+            <th class="flower">油菜花</th>
+                <td class="star" >★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+        </tr>
+        <tr>
+            <th class="flower">鬱金香</th>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">薰衣草</th>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">櫻花</th>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">海芋</th>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower"><a href="#紫藤花">紫藤花</a></th>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">百合花</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">繡球花</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr><tr>
+            <th class="flower">向日葵</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">金針花</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">韭菜花</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower">芒草</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star">★</td>
+                <td class="star">★</td>
+                <td></td>
+        </tr>
+        <tr>
+            <th class="flower"> <a href="#楓葉">楓葉</a></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="star" >★</td>
+                <td class="star">★</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="table_2">
+        <h2 class="trip">漫遊景點</h2>
+        <tr>
+            <th>花種</th>
+            <td>景點</td>
+            <td class="addr">地址</td>
+        </tr>
+        <tr>
+            <th id="梅花" rowspan="2">梅花</th>
+            <td>石家梅園</td>
+            <td class="addr">南投縣信義鄉自強村綠美巷46之1號</td>
+            </tr>
+            <tr>
+                <td>張家堡森林梅園</td>
+                <td>南投縣信義鄉自強村綠美巷69號 </td>
+            </tr>
+        <tr>
+            <th>油菜花</th>
+            <td>伯朗大道</td>
+            <td class="addr">台東縣池上鄉伯朗大道</td>
+        </tr>
+        <tr>
+            <th>鬱金香</th>
+            <td>桃源仙谷</td>
+            <td class="addr">桃園縣復興鄉長興村上高遶8鄰5號之1</td>
+        </tr>
+        <tr>
+            <th>薰衣草</th>
+            <td>薰衣草森林</td>
+            <td class="addr">台中市新社區中和村中興街20號</td>
+        </tr>
+        <tr>
+            <th>櫻花</th>
+            <td>陽明山國家公園</td>
+            <td class="addr">台北市陽明山竹子湖路1-20號</td>
+        </tr>
+        <tr>
+            <th>海芋</th>
+            <td>陽明山竹子湖</td>
+            <td class="addr">台北市北投區竹子湖68-8號旁</td>
+        </tr>
+        <tr>
+            <th id="紫藤花">紫藤花</th>
+            <td>紫藤咖啡園</td>
+            <td class="addr">新北市淡水區屯山里石頭厝2-1號</td>
+        </tr>
+        <tr>
+            <th>百合花</th>
+            <td>內雙溪自然森林中心</td>
+            <td class="addr">台北市士林區至善路三段150巷27號</td>
+        </tr>
+        <tr>
+            <th>繡球花</th>
+            <td>高家繡球花田</td>
+            <td class="addr">台北市北投區竹子湖路30號</td>
+        </tr>
+        <tr>
+            <th>向日葵</th>
+            <td>向陽農場</td>
+            <td class="addr">桃園市觀音區藍埔里11鄰52號</td>
+        </tr>
+        <tr>
+            <th>金針花</th>
+            <td>六十石山</td>
+            <td class="addr">花蓮縣富里鄉竹田村</td>
+        </tr>
+        <tr>
+            <th>韭菜花</th>
+            <td>桃園大溪</td>
+            <td class="addr">桃園市大溪區大鶯路407號附近農田</td>
+        </tr>
+        <tr>
+            <th>芒草</th>
+            <td>陽明山擎天崗</td>
+            <td class="addr">台北市士林區菁山路101巷246號</td>
+        </tr>
+        <tr>
+            <th id="楓葉" rowspan="2">楓葉</th>
+            <td>拱北殿</td>
+            <td class="addr">新北市汐止區汐萬路三段 88 號</td>
+        </tr>
+        <tr>
+            <td>司馬庫斯</td>
+            <td>新竹縣尖石鄉玉峰村14鄰司馬庫斯2號</td>
+        </tr>
+    </table>
+    <p><a href="#top" class="back">TOP</a></p>
+    <br>
+    <br>
+</body>
+</html>

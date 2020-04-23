@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>space-between</title>
+    <style>
+        h2{color: #666;}
+        .list{
+            display: flex;
+            justify-content: space-between;
+        }
+        /*  justify-content: space-between; →  ■△■△■△■
+            justify-content: space-around; → △■△△■△△■△△■△
+        */
+        .list .fitem{
+            flex-basis: 20%;
+            background: lightskyblue;
+        }
+        .clist{
+            display: flex;
+            justify-content: space-around;
+        }
+        .clist .aitem{
+            flex-basis: 20%;
+            background: lightgreen;
+        }
+        pre{
+            font-family: "Microsoft JhengHei";
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #0f614c;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>justify-content: space-between; →  ■△■△■△■</h2>
+    <div class="list">
+      
+        <div class="fitem">A</div>
+        <div class="fitem">B</div>
+        <div class="fitem">C</div>
+        <div class="fitem">D</div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2>justify-content: space-around; →  △■△△■△△■△△■△ </h2>
+    <div class="clist">
+        <div class="aitem">1</div>
+        <div class="aitem">2</div>
+        <div class="aitem">3</div>
+        <div class="aitem">4</div>
+    </div>
+    <br>
+    <hr>
+   
+    <pre><code>
+        .list{
+            display: flex;
+            justify-content: space-between;
+        }
+        /*  justify-content: space-between; →  ■△■△■△■
+            justify-content: space-around; →  △■△△■△△■△△■△
+        */
+        .list .fitem{
+            flex-basis: 20%;
+            background: lightskyblue;
+        }
+
+        < div class="list" >
+            < div class="fitem">A< /div >
+            < div class="fitem">B< /div >
+            < div class="fitem">C< /div >
+            < div class="fitem">D< /div >
+        < /div>
+
+    </code></pre>
+</body>
+</html>

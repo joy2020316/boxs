@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex 彈性盒子</title>
+    <style>
+      /*  body{
+            display: flex;
+            height: 600px;
+            justify-content: flex-start;
+            align-items: stretch;
+            flex-flow: row nowrap;
+
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }*/
+        nav{ 
+            display: flex;
+            border-bottom: 1px solid #ccc;
+        }
+        a{
+            margin: 0 5px;
+            padding: 5px 15px;
+            background-color: lightpink;
+            border-radius: 3px 3px 0 0;
+            text-decoration: none;
+            color: white;
+        }
+        a:hover{
+            background-color: lightseagreen;
+            color: black;
+        }
+        pre{
+            font-family: "Microsoft JhengHei";
+            font-weight: bold;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #782121;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">A</a>
+        <a href="#">B</a>
+        <a href="#">C</a>
+    </nav>
+    <pre><code>
+        display: flex;
+
+        flex-flow: flex-direction flez-wrap;
+        
+        flex-direction: 設定主軸的排列方式採用水平或垂直排列。
+        有四值:row (水平) ,column(垂直)
+        flex-direction: row;
+        flex-direction: row-reverse;(水平反向)
+        flex-direction: column;
+        flex-direction: column-reverse;(垂直反向)
+        
+        flex-wrap: 設定彈性項目位置超過容器時是否允許換行。
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        flex-wrap: reverse;
+
+        justify-content: 定義了容器主軸上的子項目的對齊方式，宣告在父容器上。
+        justify-content: flex-start;
+        justify-content: flex-end;
+        justify-content: center;
+        justify-content: space-between; →  △▲△▲△
+        justify-content: space-around; →  ▲△▲▲△▲▲△▲
+
+    </code></pre>
+</body>
+</html>
